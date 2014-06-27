@@ -1,1 +1,72 @@
-// CSS Styles go here
+body, html {
+	height: 100%;
+}
+
+#mainContent {
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#mainNav {
+	background: #3E3E3E;
+}
+
+#secondaryNav {
+	background-color: #717171;
+}
+
+#wrapper {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.main-nav-open.secondary-nav-open #mainContent {
+	margin-left: 400px;
+}
+
+.main-nav-open.secondary-nav-open #secondaryNav {
+	left: 200px;
+}
+
+.main-nav-open.secondary-nav-open #mainNav {
+	left: 0;
+}
+
+.nav-stacked li > h4 {
+	color: #F3F3F3;
+	padding: 10px 15px;
+}
+
+.nav-stacked li div > .nav-stacked li > a {
+	padding-left: 25px;
+}
+
+.secondary-nav-open #mainContent {
+	margin-left: 200px;
+}
+
+.secondary-nav-open #secondaryNav {
+	left: 0;
+}
+
+.side-navigation {
+	height: 100%;
+	left: -200px;
+	overflow: auto;
+	position: absolute;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+/*	top: 0;*/
+	width: 200px;
+}
+
+.side-navigation .title {
+	color: #FFF;
+	margin: 0 15px;
+}
+
+@media (min-width: 768px) {
+
+}
