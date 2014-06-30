@@ -26,6 +26,14 @@ header.row {
 	overflow-x: hidden;
 }
 
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
 .main-nav-open #mainContent, .main-nav-open.secondary-nav-open #mainContent, .secondary-nav-open #mainContent {
 	margin-left: 200px;
 }
@@ -87,9 +95,109 @@ header.row {
 	width: 75%;
 }
 
+/* -------- Blogs 1 Column -------- */
+
+.blog-1-column {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.blog-1-column .read-more {
+	margin-bottom: 6px;
+	text-align: left;
+}
+
+.comment-box {
+	margin-bottom: 10px;
+}
+
+.comment-box textarea {
+	min-height: 120px;
+}
+
+.comments {
+	display: table;
+	margin-bottom: 10px;
+}
+
+.comments .user-comment, .comments .user-image {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.comments .user-image {
+	padding-right: 15px;
+}
+
+.comments .user-image img {
+	width: 21px;
+}
+
+.entry-actions {
+	margin: 15px 0 10px;
+}
+
+.entry-body img {
+	width: 100%;
+}
+
+.entry-body .divider {
+	margin-left: -3px;
+	margin-right: -3px;
+}
+
+.entry-meta-data {
+	margin: 0 0 6px;
+}
+
+.entry-meta-data > span:before {
+	content: "|";
+	margin: 0 5px;
+}
+
+.entry-meta-data > span:first-child:before {
+	content: "";
+	margin: 0;
+}
+
+.entry-title {
+	margin: 15px 0 10px;
+}
+
+.entry-title h2 {
+	float: left;
+	margin: 0;
+}
+
+.entry-title .taglib-flags {
+	float: right;
+}
+
+.entry-title .taglib-flags .taglib-text {
+	color: transparent;
+	font-size: 0;
+	position: absolute;
+}
+
+.user-comment .comment-age {
+	color: #7E7E7E;
+}
+
+.user-comment .heading {
+	margin: 0 0 6px;
+}
+
+.user-comment .user-name {
+	font-size: 21px;
+}
+
 @media (min-width: 768px) {
 	#mainContent {
 		width: auto;
+	}
+
+	#wrapper {
+		overflow-x: visible;
 	}
 
 	.main-nav-open.secondary-nav-open #mainContent {
@@ -112,7 +220,9 @@ header.row {
 		left: 0;
 	}
 
-	#wrapper {
-		overflow-x: visible;
+	/* -------- Blogs -------- */
+
+	.comments .user-image img {
+		width: 70px;
 	}
 }
