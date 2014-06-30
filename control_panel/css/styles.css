@@ -1,11 +1,17 @@
-body, html {
-	height: 100%;
+header {
+	background-color: #717171;
+}
+
+header.row {
+	margin: 0;
 }
 
 #mainContent {
+	padding: 15px;
 	-moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	width: 100%;
 }
 
 #mainNav {
@@ -17,20 +23,20 @@ body, html {
 }
 
 #wrapper {
-	height: 100%;
 	overflow-x: hidden;
 }
 
-.main-nav-open.secondary-nav-open #mainContent {
-	margin-left: 400px;
+.main-nav-open #mainContent, .main-nav-open.secondary-nav-open #mainContent, .secondary-nav-open #mainContent {
+	margin-left: 200px;
+}
+
+.main-nav-open #mainNav {
+	left: 0;
+	z-index: 1;
 }
 
 .main-nav-open.secondary-nav-open #secondaryNav {
-	left: 200px;
-}
-
-.main-nav-open.secondary-nav-open #mainNav {
-	left: 0;
+	left: -200px;
 }
 
 .nav-stacked li > h4 {
@@ -39,11 +45,7 @@ body, html {
 }
 
 .nav-stacked li div > .nav-stacked li > a {
-	padding-left: 25px;
-}
-
-.secondary-nav-open #mainContent {
-	margin-left: 200px;
+	padding-left: 35px;
 }
 
 .secondary-nav-open #secondaryNav {
@@ -51,14 +53,12 @@ body, html {
 }
 
 .side-navigation {
-	height: 100%;
 	left: -200px;
 	overflow: auto;
 	position: absolute;
 	-moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-/*	top: 0;*/
 	width: 200px;
 }
 
@@ -67,6 +67,52 @@ body, html {
 	margin: 0 15px;
 }
 
-@media (min-width: 768px) {
+.side-navigation-dropdown-container:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 
+.side-navigation-dropdown-container > a {
+	float: right;
+	text-align: center;
+	width: 25%;
+}
+
+.side-navigation-dropdown-container > a:first-child {
+	float: left;
+	text-align: left;
+	width: 75%;
+}
+
+@media (min-width: 768px) {
+	#mainContent {
+		width: auto;
+	}
+
+	.main-nav-open.secondary-nav-open #mainContent {
+		margin-left: 400px;
+	}
+
+	.main-nav-open.secondary-nav-open #secondaryNav {
+		left: 200px;
+	}
+
+	.main-nav-open.secondary-nav-open #mainNav {
+		left: 0;
+	}
+
+	.secondary-nav-open #mainContent {
+		margin-left: 200px;
+	}
+
+	.secondary-nav-open #secondaryNav {
+		left: 0;
+	}
+
+	#wrapper {
+		overflow-x: visible;
+	}
 }
