@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../third-party/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./css/styles.css" rel="stylesheet" />
+	<script src="../third-party/alloy-2.5.0/build/aui/aui-min.js" type="text/javascript"></script>
+	<title>Template for pages</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content container-fluid">
+			<h1 class="page-title">FORM ELEMENTS
+				<small>sub heading</small>
+			</h1>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="box-content">
+						<h4>BASIC FORM ELEMENTS</h4>
+						<div class="form-group">
+							<label>Default text input</label>
+							<input class="form-control" placeholder="Placeholder" type="text">
+						</div>
+						<div class="form-group">
+							<label>Password input</label>
+							<input class="form-control" placeholder="Enter password" type="password">
+						</div>
+						<div class="form-group">
+							<label>Small text input</label>
+							<input class="form-control input-sm" placeholder="Placeholder" type="text">
+						</div>
+						<div class="form-group">
+							<label>Large text input</label>
+							<input class="form-control input-lg" placeholder="Placeholder" type="text">
+						</div>
+						<div class="form-group">
+							<label>Disabled text input</label>
+							<input disabled class="form-control" placeholder="Placeholder" type="text">
+						</div>
+						<div class="form-group">
+							<label>Read only text input</label>
+							<input class="form-control" placeholder="Placeholder" readonly type="text">
+						</div>
+						<div class="form-group">
+							<label>Textarea</label>
+							<textarea class="form-control"></textarea>
+						</div>
+					</div>
+
+					<div class="box-content">
+						<h4 class="small-title">INPUT GROUP WITH ADDONS</h4>
+						<div class="form-group">
+							<label>Addon Left</label>
+							<div class="input-group">
+								<span class="input-group-addon">@</span>
+								<input class="form-control" placeholder="Username" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Addon Right</label>
+							<div class="input-group">
+								<input class="form-control" type="text">
+								<span class="input-group-addon">.00</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Left and Right Addon</label>
+							<div class="input-group">
+								<span class="input-group-addon">@</span>
+								<input class="form-control" type="text">
+								<span class="input-group-addon">.00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-6">
+					<div class="box-content">
+						<h4 class="small-title">VALIDATION STATES</h4>
+						<div class="form-group has-success">
+							<label class="control-label" for="inputSuccess1">Input with success</label>
+							<input class="form-control" type="text">
+						</div>
+						<div class="form-group has-warning">
+							<label class="control-label" for="inputWarning1">Input with warning</label>
+							<input class="form-control" type="text">
+						</div>
+						<div class="form-group has-error">
+							<label class="control-label" for="inputError1">Input with error</label>
+							<input class="form-control" type="text">
+						</div>
+						<div class="form-group has-success has-feedback">
+							<label class="control-label" for="inputSuccess2">Input with success icon</label>
+							<input class="form-control" type="text">
+							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+						</div>
+						<div class="form-group has-warning has-feedback">
+							<label class="control-label" for="inputWarning2">Input with warning icon</label>
+							<input class="form-control" type="text">
+							<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+						</div>
+						<div class="form-group has-error has-feedback">
+							<label class="control-label" for="inputError2">Input with error</label>
+							<input class="form-control" type="text">
+							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+						</div>
+					</div>
+
+					<div class="box-content">
+						<h4 class="small-title">CHECKBOXES AND RADIOS</h4>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								Regular Check Box
+							</label>
+						</div>
+						<div class="checkbox disabled">
+							<label>
+								<input disabled type="checkbox" value="">
+								Disabled Check Box
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input name="optionsRadios" type="radio"> 
+								Regular Radio Button
+							</label>
+						</div>
+						<div class="radio disabled">
+							<label>
+								<input disabled name="optionsRadios" type="radio">
+								Disabled Radio Button
+							</label>
+						</div>
+					</div>
+					<div class="box-content">
+						<h4 class="small-title">SELECT BOX</h4>
+						<h4><small>Regular Select Box</small></h4>
+						<select class="form-control">
+							<option>Sample 1</option>
+							<option>Sample 2</option>
+							<option>Sample 3</option>
+							<option>Sample 4</option>
+						</select>
+						<h4><small>Select Box with Multiple Select Optiopns</small></h4>
+						<select class="form-control" multiple>
+							<option>Sample 1</option>
+							<option>Sample 2</option>
+							<option>Sample 3</option>
+							<option>Sample 4</option>
+						</select>
+						<h4>FILE UPLOAD</h4>
+						<div class="form-group">
+							<label class="sr-only">FILE UPLOAD</label>
+							<input id="inputFile" type="file">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
