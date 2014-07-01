@@ -37,7 +37,11 @@
 						</div>
 						<div class="form-group">
 							<label>Disabled text input</label>
-							<input disabled="" class="form-control" placeholder="Placeholder" type="text">
+							<input disabled class="form-control" placeholder="Placeholder" type="text">
+						</div>
+						<div class="form-group">
+							<label>Read only text input</label>
+							<input class="form-control" placeholder="Placeholder" readonly type="text">
 						</div>
 						<div class="form-group">
 							<label>Textarea</label>
@@ -46,7 +50,7 @@
 					</div>
 
 					<div class="box-content">
-						<h4 class="small-title">INPUT GROUP</h4>
+						<h4 class="small-title">INPUT GROUP WITH ADDONS</h4>
 						<div class="form-group">
 							<label>Addon Left</label>
 							<div class="input-group">
@@ -76,46 +80,81 @@
 					<div class="box-content">
 						<h4 class="small-title">VALIDATION STATES</h4>
 						<div class="form-group has-success">
-							<label class="control-label">Input with success</label>
+							<label class="control-label" for="inputSuccess1">Input with success</label>
 							<input class="form-control" type="text">
 						</div>
 						<div class="form-group has-warning">
-							<label class="control-label">Input with warning</label>
+							<label class="control-label" for="inputWarning1">Input with warning</label>
 							<input class="form-control" type="text">
 						</div>
 						<div class="form-group has-error">
-							<label class="control-label">Input with error</label>
+							<label class="control-label" for="inputError1">Input with error</label>
 							<input class="form-control" type="text">
 						</div>
 						<div class="form-group has-success has-feedback">
-							<label class="control-label">Input with success</label>
+							<label class="control-label" for="inputSuccess2">Input with success icon</label>
 							<input class="form-control" type="text">
 							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
 						</div>
 						<div class="form-group has-warning has-feedback">
-							<label class="control-label">Input with warning</label>
+							<label class="control-label" for="inputWarning2">Input with warning icon</label>
 							<input class="form-control" type="text">
-							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+							<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
 						</div>
 						<div class="form-group has-error has-feedback">
-							<label class="control-label">Input with error</label>
-							<input class="form-control" type="text">
-							<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-						</div>
-						<div class="form-group has-success has-feedback">
-							<label class="control-label">Input with success</label>
+							<label class="control-label" for="inputError2">Input with error</label>
 							<input class="form-control" type="text">
 							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
 						</div>
-						<div class="form-group has-warning has-feedback">
-							<label class="control-label">Input with warning</label>
-							<input class="form-control" type="text">
-							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+					</div>
+
+					<div class="box-content">
+						<h4 class="small-title">CHECKBOXES AND RADIOS</h4>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								Regular Check Box
+							</label>
 						</div>
-						<div class="form-group has-error has-feedback">
-							<label class="control-label">Input with error</label>
-							<input class="form-control" type="text">
-							<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+						<div class="checkbox disabled">
+							<label>
+								<input disabled type="checkbox" value="">
+								Disabled Check Box
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input name="optionsRadios" type="radio"> 
+								Regular Radio Button
+							</label>
+						</div>
+						<div class="radio disabled">
+							<label>
+								<input disabled name="optionsRadios" type="radio">
+								Disabled Radio Button
+							</label>
+						</div>
+					</div>
+					<div class="box-content">
+						<h4 class="small-title">SELECT BOX</h4>
+						<h4><small>Regular Select Box</small></h4>
+						<select class="form-control">
+							<option>Sample 1</option>
+							<option>Sample 2</option>
+							<option>Sample 3</option>
+							<option>Sample 4</option>
+						</select>
+						<h4><small>Select Box with Multiple Select Optiopns</small></h4>
+						<select class="form-control" multiple>
+							<option>Sample 1</option>
+							<option>Sample 2</option>
+							<option>Sample 3</option>
+							<option>Sample 4</option>
+						</select>
+						<h4>FILE UPLOAD</h4>
+						<div class="form-group">
+							<label class="sr-only">FILE UPLOAD</label>
+							<input id="inputFile" type="file">
 						</div>
 					</div>
 				</div>
