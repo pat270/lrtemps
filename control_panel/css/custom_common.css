@@ -1,11 +1,19 @@
-.box {
-	border: 1px solid #DDD;
-	background-color: #FFF;
-	margin-bottom: 20px;
-	padding: 0 15px;
+/* ------- Panels ------- */
+
+.box.panel {
+	border-radius: 0;
+	padding: 0 15px 15px;
 }
 
-/* ------- Panels ------- */
+.box.panel > .panel-heading {
+	border-radius: 0;
+	margin: 0 -15px 15px;
+}
+
+.box.panel .panel-heading:first-child {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
 
 .panel .panel-heading {
 	border-radius: 0;
