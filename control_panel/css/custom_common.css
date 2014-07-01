@@ -1,0 +1,47 @@
+.box {
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	padding: 0 15px;
+}
+
+/* ------- Panels ------- */
+
+.panel .panel-heading {
+	border-radius: 0;
+}
+
+.panel .panel-heading:first-child {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.panel-danger > .panel-footer {
+	color: #A94442;
+	background-color: #F2DEDE;
+	border-color: #EBCCD1;
+}
+
+.panel-info > .panel-footer {
+	color: #31708F;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+}
+
+.panel-primary > .panel-footer {
+	color: #FFF;
+	background-color: #428BCA;
+	border-color: #428BCA;
+}
+
+.panel-success > .panel-footer {
+	color: #3C763D;
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+}
+
+.panel-warning > .panel-footer {
+	color: #8A6D3B;
+	background-color: #FCF8E3;
+	border-color: #FAEBCC;
+}
