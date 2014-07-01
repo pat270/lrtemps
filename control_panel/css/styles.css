@@ -103,7 +103,7 @@ header.row {
 
 .blog-1-column {
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 980px;
 }
 
 .blog-1-column .read-more {
@@ -111,11 +111,16 @@ header.row {
 	text-align: left;
 }
 
+.box.entry {
+	padding: 15px;
+}
+
 .comment-box {
 	margin-bottom: 10px;
 }
 
 .comment-box textarea {
+	margin-bottom: 10px;
 	min-height: 120px;
 }
 
@@ -138,7 +143,11 @@ header.row {
 }
 
 .entry-actions {
-	margin: 15px 0 10px;
+	margin: 0 0 10px;
+}
+
+.entry-body {
+	margin-bottom: 15px;
 }
 
 .entry-body img {
