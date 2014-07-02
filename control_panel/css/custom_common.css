@@ -1,22 +1,63 @@
-/* ------- Panels ------- */
+/* -------- Removes Rounded Borders -------- */
 
-.box.panel {
+.square-borders,
+.square-borders code,
+.square-borders pre,
+.square-borders .alert,
+.square-borders .btn,
+.square-borders .btn-lg,
+.square-borders .btn-sm,
+.square-borders .btn-xs,
+.square-borders .container .jumbotron,
+.square-borders .dropdown-menu,
+.square-borders .form-control,
+.square-borders .input-group-addon,
+.square-borders .input-lg,
+.square-borders .input-sm,
+.square-borders .nav-pills > li > a,
+.square-borders .nav-tabs > li > a,
+.square-borders .panel,
+.square-borders .progress,
+.square-borders .thumbnail,
+.square-borders .well-lg,
+.square-borders .well-sm {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
 	border-radius: 0;
-	padding: 0 15px 15px;
 }
 
-.box.panel > .panel-heading {
-	border-radius: 0;
-	margin: 0 -15px 15px;
+.square-borders .btn-group-vertical > .btn:first-child:not(:last-child) {
+	border-top-right-radius: 0;
 }
 
-.box.panel .panel-heading:first-child {
+.square-borders .list-group-item:first-child,
+.square-borders .panel .panel-heading:first-child {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
 
-.panel .panel-heading {
-	border-radius: 0;
+.list-group-item:last-child,
+.square-borders .panel .panel-footer {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* -------- Panels -------- */
+
+.box.panel {
+	padding: 0 15px 15px;
+}
+
+.box.panel > .table-bordered {
+	margin-bottom: 15px;
+}
+
+.box.panel > .panel-heading {
+	margin: 0 -15px 15px;
+}
+
+.box.panel > .table-bordered {
+	border: 1px solid #DDD;
 }
 
 .panel .panel-heading:first-child {
