@@ -36,6 +36,10 @@ app.get('/form-elements', function(req, res){
   res.render('form-elements', { title: 'Form Elements' });
 });
 
+app.get('/nav', function(req, res){
+  res.render('nav', { title: 'Nav' });
+});
+
 app.get('/navbar', function(req, res){
   res.render('navbar', { title: 'Navbar' });
 });

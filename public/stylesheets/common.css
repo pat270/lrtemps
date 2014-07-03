@@ -43,6 +43,13 @@
 	border-bottom-right-radius: 0;
 }
 
+/* -------- Navs -------- */
+
+.nav-justified .dropdown-menu,
+.nav-stacked .dropdown-menu {
+	width: 100%;
+}
+
 /* -------- Navbars -------- */
 
 .navbar-danger .nav > li > a:hover {
