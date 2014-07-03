@@ -1,3 +1,11 @@
-# Read Me
+# UI Kit Read Me
 
-Copy and paste code into a new file under /classic or /control_panel from /templates/main_template.html
+## Setup
+
+1. Install NodeJS
+
+2. Run npm install
+
+3. Start server by running node app.js
+
+4. Navigate to localhost:3000 in browser

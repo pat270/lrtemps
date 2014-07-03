@@ -1,0 +1,32 @@
+		</div>
+	</section>
+</div>
+<script>
+	YUI().use('node', function(A) {
+		var opened = false;
+
+		A.one('#toggleCpSideNavigation').on('click', function(event) {
+			var wrapper = A.one('#wrapper');
+
+			if (wrapper.hasClass('secondary-nav-open') && wrapper.hasClass('main-nav-open')) {
+				wrapper.removeClass('main-nav-open');
+				opened = true;
+			}
+			else if (wrapper.hasClass('secondary-nav-open') && opened) {
+				wrapper.removeClass('secondary-nav-open');
+				opened = false;
+			}
+			else if (wrapper.hasClass('secondary-nav-open') && !opened) {
+				wrapper.addClass('main-nav-open');
+			}
+			else {
+				wrapper.addClass('secondary-nav-open');
+			}
+		});
+
+		A.one('.side-navigation').delegate('click', function(event) {
+			event.preventDefault();
+			event.currentTarget.next('.collapse').toggleClass('in');
+		}, 'li .side-navigation-dropdown');
+	});
+</script>
