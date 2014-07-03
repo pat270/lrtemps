@@ -32,6 +32,10 @@ app.get('/blog-1-column', function(req, res){
   res.render('blog-1-column', { title: 'Blog 1 Column' });
 });
 
+app.get('/buttons', function(req, res){
+  res.render('buttons', { title: 'Buttons' });
+});
+
 app.get('/form-elements', function(req, res){
   res.render('form-elements', { title: 'Form Elements' });
 });
