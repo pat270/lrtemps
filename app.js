@@ -40,6 +40,10 @@ app.get('/form-elements', function(req, res){
   res.render('form-elements', { title: 'Form Elements' });
 });
 
+app.get('/form-examples', function(req, res){
+  res.render('form-examples', { title: 'Form Examples' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
