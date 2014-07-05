@@ -52,6 +52,10 @@ app.get('/form-examples', function(req, res){
   res.render('form-examples', { title: 'Form Examples' });
 });
 
+app.get('/list-groups', function(req, res){
+  res.render('list-groups', { title: 'List Groups' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
