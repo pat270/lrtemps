@@ -80,6 +80,10 @@ app.get('/modals', function(req, res){
   res.render('modals', { title: 'Modals' });
 });
 
+app.get('/list-groups', function(req, res){
+  res.render('list-groups', { title: 'List Groups' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
