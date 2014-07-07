@@ -28,6 +28,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 
+app.get('/alerts-and-progress-bars', function(req, res){
+  res.render('alerts-and-progress-bars', { title: 'Alerts and Progress Bars' });
+});
+
 app.get('/blog-1-column', function(req, res){
   res.render('blog-1-column', { title: 'Blog 1 Column' });
 });
