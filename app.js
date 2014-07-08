@@ -60,6 +60,10 @@ app.get('/navbar', function(req, res){
   res.render('navbar', { title: 'Navbar' });
 });
 
+app.get('/page-header-jumbotron-and-media-objects', function(req, res){
+  res.render('page-header-jumbotron-and-media-objects', { title: 'Page Header, Jumbotron, and Media Objects' });
+});
+
 app.get('/panels', function(req, res){
   res.render('panels', { title: 'Panels' });
 });
