@@ -56,6 +56,10 @@ app.get('/images-and-thumbnails', function(req, res){
   res.render('images-and-thumbnails', { title: 'Images and Thumbnails' });
 });
 
+app.get('/icons', function(req, res){
+  res.render('icons', { title: 'Icons' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
