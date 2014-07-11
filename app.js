@@ -32,6 +32,10 @@ app.get('/blog-1-column', function(req, res){
   res.render('blog-1-column', { title: 'Blog 1 Column' });
 });
 
+app.get('/breadcrumb-and-paginations', function(req, res){
+  res.render('breadcrumb-and-paginations', { title: 'Breadcrumb and Paginations' });
+});
+
 app.get('/buttons', function(req, res){
   res.render('buttons', { title: 'Buttons' });
 });
