@@ -52,6 +52,10 @@ app.get('/form-examples', function(req, res){
   res.render('form-examples', { title: 'Form Examples' });
 });
 
+app.get('/grid', function(req, res){
+  res.render('grid', { title: 'Grid' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
