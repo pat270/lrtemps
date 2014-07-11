@@ -60,6 +60,10 @@ app.get('/icons', function(req, res){
   res.render('icons', { title: 'Icons' });
 });
 
+app.get('/grid', function(req, res){
+  res.render('grid', { title: 'Grid' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
