@@ -245,5 +245,18 @@
 			</div>
 		</div>
 
+		<script>
+			YUI().use('node', 'event', function(A) {
+				A.one('#mainContent').delegate('click', function(event) {
+					var currentTarget = event.currentTarget;
+
+					var alertDismissible = currentTarget.ancestor('.alert-dismissible');
+
+					alertDismissible.hide();
+
+				}, '.close');
+			});
+		</script>
+
 	<% include includes/nav-end %>
 <% include includes/footer %>
