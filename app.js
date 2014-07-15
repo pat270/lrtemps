@@ -64,6 +64,10 @@ app.get('/grid', function(req, res){
   res.render('grid', { title: 'Grid' });
 });
 
+app.get('/modals', function(req, res){
+  res.render('modals', { title: 'Modals' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });
