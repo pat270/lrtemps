@@ -212,6 +212,34 @@ header.row {
 	font-size: 21px;
 }
 
+/* -------- Glyphicons -------- */
+
+.glyphicon {
+	font-size: 24px
+}
+
+.glyphicon-class {
+	display: block;
+}
+
+.glyphicons li {
+	float: left;
+	height: 110px;
+	text-align: center;
+	width: 50%;
+}
+
+.glyphicons-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (min-width: 480px) {
+	.glyphicons li {
+		width: 25%;
+	}
+}
+
 @media (min-width: 768px) {
 	#mainContent {
 		width: auto;
@@ -219,6 +247,10 @@ header.row {
 
 	#wrapper {
 		overflow-x: visible;
+	}
+
+	.glyphicons li {
+		width: 10%;
 	}
 
 	.main-nav-open.secondary-nav-open #mainContent {
