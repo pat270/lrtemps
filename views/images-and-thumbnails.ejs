@@ -7,62 +7,65 @@
 		<div class="col-md-6">
 			<div class="box panel panel-default">
 				<h4 class="panel-heading">Responsive Image</h4>
+
 				<img alt="responsive image" class="img-responsive" src="./images/unsplash_52c470899a2e1_1.jpg">
 
 				<br><pre><code>&lt;img alt="..." class="img-responsive" src="..."&gt;</code></pre>
 			</div>
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-6" id="imageShapes">
 			<div class="box panel panel-default">
 				<h4 class="panel-heading">Image Shapes</h4>
+
 				<div class="row">
 					<div class="col-xs-4">
-						<img alt="responsive image with rouded edges" class="img-responsive img-rounded" src="./images/unsplash_52c470899a2e1_1.jpg">
-
-						<br><pre><code>&lt;img alt="..." class="img-rounded" src="..."&gt;</code></pre>
+						<img alt="responsive image with rouded edges" class="img-responsive img-rounded" src="./images/thumbnail_placeholder.gif">
 					</div> 
 
 					<div class="col-xs-4">
-						<img alt="responsive circle image" class="img-circle img-responsive" src="./images/unsplash_52c470899a2e1_1.jpg">
-
-						<br><pre><code>&lt;img alt="..." class="img-circle" src="..."&gt;</code></pre>
+						<img alt="responsive circle image" class="img-circle img-responsive" src="./images/thumbnail_placeholder.gif">
 					</div>
 
 					<div class="col-xs-4">
-						<img alt="responsive thumbnail image" class="img-thumbnail" src="./images/unsplash_52c470899a2e1_1.jpg">
+						<img alt="responsive thumbnail image" class="img-thumbnail img-responsive" src="./images/thumbnail_placeholder.gif">
+					</div>
+				</div>
 
-						<br><br><pre><code>&lt;img alt="..." class="img-thumbnail" src="..."&gt;</code></pre>
+				<div class="row">
+					<div class="col-md-12">
+						<br><pre><code>&lt;img alt="..." class="img-rounded" src="..."&gt;</code><br><code>&lt;img alt="..." class="img-circle" src="..."&gt;</code><br><code>&lt;img alt="..." class="img-thumbnail" src="..."&gt;</code></pre>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<div class="box panel panel-default">
 				<h4 class="panel-heading">Default Thumbnails</h4>
+
 				<div class="row">
-					<div class="col-md-3 col-xs-6">
+					<div class="col-sm-3 col-xs-6">
 						<a class="thumbnail" href="#">
-							<img alt="thumbnail" src="./images/user_male_portrait.png">
+							<img alt="thumbnail" class="img-responsive" src="./images/thumbnail_placeholder.gif">
 						</a>
 					</div>
 
-					<div class="col-md-3 col-xs-6">
+					<div class="col-sm-3 col-xs-6">
 						<a class="thumbnail" href="#">
-							<img alt="thumbnail" src="./images/user_male_portrait.png">
+							<img alt="thumbnail" src="./images/thumbnail_placeholder.gif">
 						</a>
 					</div>
 
-					<div class="col-md-3 col-xs-6">
+					<div class="col-sm-3 col-xs-6">
 						<a class="thumbnail" href="#">
-							<img alt="thumbnail" src="./images/user_male_portrait.png">
+							<img alt="thumbnail" src="./images/thumbnail_placeholder.gif">
 						</a>
 					</div>
 
-					<div class="col-md-3 col-xs-6 ">
+					<div class="col-sm-3 col-xs-6 ">
 						<a class="thumbnail" href="#">
-							<img alt="thumbnail" src="./images/user_male_portrait.png">
+							<img alt="thumbnail" src="./images/thumbnail_placeholder.gif">
 						</a>
 					</div>
 				</div>
@@ -74,6 +77,7 @@
 		<div class="col-md-12">
 			<div class="box panel panel-default">
 				<h4 class="panel-heading">Thumbnails with Custom Content</h4>
+
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="thumbnail">
@@ -81,8 +85,14 @@
 
 							<div class="caption">
 								<h4>Thumbnail with Text and Buttons</h4>
+
 								<p>Espresso caffeine, cup macchiato, doppio aroma variety to go, wings acerbic, seasonal single shot organic trifecta mocha.</p>
-								<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+
+								<div>
+									<a href="#" class="btn btn-primary" role="button">Button</a>
+
+									<a href="#" class="btn btn-default" role="button">Button</a>
+								</div>
 							</div>
 						</div>
 
@@ -95,9 +105,12 @@
 
 							<div class="caption">
 								<h4>Thumbnail with Select Box</h4>
+
 								<select class="form-control">
 									<option>Espresso caffeine</option>
+
 									<option>Cup macchiato</option>
+
 									<option>Organic trifecta mocha</option>
 								</select>
 							</div>
@@ -112,9 +125,12 @@
 
 							<div class="caption">
 								<h4>Thumbnail with List Group</h4>
+
 								<ul class="list-group">
 									<li class="list-group-item">Espresso caffeine</li>
+
 									<li class="list-group-item">Cup macchiato</li>
+
 									<li class="list-group-item">Organic trifecta mocha</li>
 								</ul>
 							</div>
@@ -124,6 +140,6 @@
 					</div>
 				</div>
 			</div>
-
+		</div>
 	<% include includes/nav-end %>
 <% include includes/footer %>
