@@ -288,4 +288,10 @@ header.row {
 	.comments .user-image img {
 		width: 70px;
 	}
+
+	/* -------- Modals -------- */
+
+	.modal-dialog {
+		width: auto;
+	}
 }
