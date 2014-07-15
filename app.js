@@ -52,6 +52,10 @@ app.get('/form-examples', function(req, res){
   res.render('form-examples', { title: 'Form Examples' });
 });
 
+app.get('/icons', function(req, res){
+  res.render('icons', { title: 'Icons' });
+});
+
 app.get('/nav', function(req, res){
   res.render('nav', { title: 'Nav' });
 });

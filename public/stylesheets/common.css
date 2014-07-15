@@ -248,3 +248,37 @@
 	background-color: #FCF8E3;
 	border-color: #FAEBCC;
 }
+
+/* -------- Glyphicons -------- */
+
+.glyphicon {
+	font-size: 24px
+}
+
+.glyphicon-class {
+	display: block;
+}
+
+.glyphicons li {
+	float: left;
+	height: 110px;
+	text-align: center;
+	width: 10%;
+}
+
+.glyphicons-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (max-width: 980px) {
+	.glyphicons li {
+		width: 25%;
+	}
+}
+
+@media (max-width: 768px) {
+	.glyphicons li {
+		width: 50%;
+	}
+}
