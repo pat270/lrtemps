@@ -376,8 +376,13 @@ header.row {
 	.comments .user-image img {
 		width: 70px;
 	}
-}
 
+	/* -------- Modals -------- */
+
+	.modal-dialog {
+		width: auto;
+	}
+}
 @media (min-width: 1024px) {
 	#wrapper {
 		overflow-x: visible;
