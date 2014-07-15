@@ -43,15 +43,6 @@
 	border-bottom-right-radius: 0;
 }
 
-/* -------- Grids -------- */
-
-.grid {
-	border: 1px solid #717171;
-	margin-bottom: 15px;
-	padding: 5px 0;
-	text-align: center;
-}
-
 /* -------- Navs -------- */
 
 .nav-justified .dropdown-menu,
