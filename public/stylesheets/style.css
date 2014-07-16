@@ -294,6 +294,12 @@ header.row {
 	text-align: center;
 }
 
+/* -------- Media Page -------- */
+
+#mediaPage img {
+	width: 64px;
+}
+
 @media (min-width: 480px) {
 	.glyphicons li {
 		width: 25%;
