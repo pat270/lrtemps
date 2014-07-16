@@ -44,12 +44,20 @@ app.get('/buttons', function(req, res){
   res.render('buttons', { title: 'Buttons' });
 });
 
+app.get('/components', function(req, res){
+  res.render('components', { title: 'Components' });
+});
+
 app.get('/form-elements', function(req, res){
   res.render('form-elements', { title: 'Form Elements' });
 });
 
 app.get('/form-examples', function(req, res){
   res.render('form-examples', { title: 'Form Examples' });
+});
+
+app.get('/elements', function(req, res){
+  res.render('elements', { title: 'Elements' });
 });
 
 app.get('/images-and-thumbnails', function(req, res){
