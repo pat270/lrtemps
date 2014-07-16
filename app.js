@@ -52,6 +52,10 @@ app.get('/components', function(req, res){
   res.render('components', { title: 'Components' });
 });
 
+app.get('/dropdowns', function(req, res){
+  res.render('dropdowns', { title: 'Dropdowns' });
+});
+
 app.get('/form-elements', function(req, res){
   res.render('form-elements', { title: 'Form Elements' });
 });

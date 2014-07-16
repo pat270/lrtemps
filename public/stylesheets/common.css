@@ -43,6 +43,13 @@
 	border-bottom-right-radius: 0;
 }
 
+/* -------- Dropdown -------- */
+
+.dropdown-menu-top {
+	bottom: 100%;
+	top: auto;
+}
+
 /* -------- Navs -------- */
 
 .nav-justified .dropdown-menu,
