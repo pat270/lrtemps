@@ -3,25 +3,21 @@
 </div>
 <script>
 	YUI().use('node', function(A) {
-		var opened = false;
+		A.one('#secondaryNav .menu-toggle').on('click', function(event) {
+			var currentTarget = event.currentTarget;
 
-		A.one('#toggleCpSideNavigation').on('click', function(event) {
-			var wrapper = A.one('#wrapper');
+			event.preventDefault();
 
-			if (wrapper.hasClass('secondary-nav-open') && wrapper.hasClass('main-nav-open')) {
-				wrapper.removeClass('main-nav-open');
-				opened = true;
-			}
-			else if (wrapper.hasClass('secondary-nav-open') && opened) {
-				wrapper.removeClass('secondary-nav-open');
-				opened = false;
-			}
-			else if (wrapper.hasClass('secondary-nav-open') && !opened) {
-				wrapper.addClass('main-nav-open');
-			}
-			else {
-				wrapper.addClass('secondary-nav-open');
-			}
+			currentTarget.ancestor('#wrapper').toggleClass('secondary-nav-open').toggleClass('secondary-nav-closed');
+			currentTarget.one('.glyphicon').toggleClass('glyphicon-arrow-left').toggleClass('glyphicon-arrow-right');
+		});
+
+		A.one('#headerTopBar .menu-toggle').on('click', function(event) {
+			var currentTarget = event.currentTarget;
+
+			event.preventDefault();
+
+			currentTarget.ancestor('#wrapper').toggleClass('main-nav-open').toggleClass('main-nav-closed');
 		});
 
 		A.one('.side-navigation').delegate('click', function(event) {
