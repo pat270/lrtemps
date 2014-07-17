@@ -113,6 +113,14 @@ header.row {
 	color: #0085C3;
 }
 
+.side-navigation .nav > li > a:focus {
+	background-color: transparent;
+}
+
+.side-navigation .nav > li:hover > a:focus {
+	background-color: #EEE;
+}
+
 .side-navigation .nav-stacked li > h4 {
 	color: #F3F3F3;
 	padding: 10px 15px;
@@ -155,6 +163,12 @@ header.row {
 
 .side-navigation-dropdown-container .collapse {
 	clear: both;
+}
+
+/* -------- Accordions -------- */
+
+#myToggler .badge, #myToggler .label {
+	float: right;
 }
 
 /* -------- Blogs 1 Column -------- */
@@ -329,7 +343,7 @@ header.row {
 	}
 
 	#mainContent {
-		width: auto;
+		width: 100%;
 	}
 
 	.menu-toggle {

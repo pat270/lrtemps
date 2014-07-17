@@ -28,6 +28,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 
+app.get('/accordions', function(req, res){
+  res.render('accordions', { title: 'Accordions' });
+});
+
 app.get('/alerts-and-progress-bars', function(req, res){
   res.render('alerts-and-progress-bars', { title: 'Alerts and Progress Bars' });
 });
@@ -98,6 +102,10 @@ app.get('/tables', function(req, res){
 
 app.get('/typography', function(req, res){
   res.render('typography', { title: 'Typography' });
+});
+
+app.get('/widgets', function(req, res){
+  res.render('widgets', { title: 'Widgets' });
 });
 
 http.createServer(app).listen(app.get('port'), function(){
