@@ -37,7 +37,7 @@
 	border-top-right-radius: 0;
 }
 
-.list-group-item:last-child,
+.square-borders .list-group-item:last-child,
 .square-borders .panel .panel-footer {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
@@ -191,10 +191,31 @@
 	background-color: #8A6D3B;
 }
 
-/* -------- Panels -------- */
+/* -------- Box Panels (Used for displaying content like portlets) -------- */
 
 .box.panel {
 	padding: 0 15px 15px;
+}
+
+.box.panel > .list-group {
+	margin-bottom: 20px;
+}
+
+.box.panel .panel-heading + .list-group .list-group-item:first-child {
+	border-top-width: 1px;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.box.panel > .list-group .list-group-item {
+	border-width: 1px;
+}
+
+.box.panel > .list-group .list-group-item:last-child {
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
 }
 
 .box.panel > .table-bordered {
@@ -208,6 +229,8 @@
 .box.panel > .table-bordered {
 	border: 1px solid #DDD;
 }
+
+/* -------- Panels -------- */
 
 .panel .panel-heading:first-child {
 	border-top-left-radius: 3px;
