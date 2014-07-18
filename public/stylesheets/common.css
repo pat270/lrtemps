@@ -230,7 +230,109 @@
 	border: 1px solid #DDD;
 }
 
+/* -------- Featured Panels -------- */
+
+.featured-panel.panel {
+	background-color: transparent;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	overflow: auto;
+}
+
+.featured-panel.panel img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.featured-panel.panel .panel-body {
+	padding: 0;
+}
+
+.featured-panel.panel .panel-body .left, .featured-panel.panel .panel-body .right {
+	background-color: #FFF;
+	display: block;
+	padding: 15px;
+	width: 100%;
+}
+
+.featured-panel.panel.featured-panel-4060 .panel-body .left {
+	width: 100%;
+}
+
+.featured-panel.panel.featured-panel-4060 .panel-body .right {
+	width: 100%;
+}
+
+.featured-panel.panel.featured-panel-6040 .panel-body .left {
+	width: 100%;
+}
+
+.featured-panel.panel.featured-panel-6040 .panel-body .right {
+	width: 100%;
+}
+
+@media (min-width: 480px) {
+	.featured-panel.panel .panel-body .left, .featured-panel.panel .panel-body .right {
+		display: table-cell;
+		padding: 15px;
+		width: 50%;
+		vertical-align: middle;
+	}
+
+	.featured-panel.panel.featured-panel-4060 .panel-body .left {
+		width: 40%;
+	}
+
+	.featured-panel.panel.featured-panel-4060 .panel-body .right {
+		width: 60%;
+	}
+
+	.featured-panel.panel.featured-panel-6040 .panel-body .left {
+		width: 60%;
+	}
+
+	.featured-panel.panel.featured-panel-6040 .panel-body .right {
+		width: 40%;
+	}
+}
+
+/* -------- Panel Heading Align -------- */
+
+.panel.panel-heading-align {
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.panel.panel-heading-align .panel-body {
+	background-color: #FFF;
+}
+
+.panel.panel-heading-align .panel-footer, .panel.panel-heading-align .panel-heading {
+	display: table;
+	width: 100%;
+}
+
+.panel.panel-heading-align .panel-footer > div, .panel.panel-heading-align .panel-heading > div {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 1%;
+}
+
+.panel.panel-heading-align .panel-heading > div:last-child {
+	text-align: right;
+}
+
+.panel.panel-heading-align .panel-heading > div:first-child {
+	text-align: left;
+}
+
 /* -------- Panels -------- */
+
+.panel.no-borders {
+	border-width: 0;
+}
 
 .panel .panel-heading:first-child {
 	border-top-left-radius: 3px;
