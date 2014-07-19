@@ -279,7 +279,11 @@ header.row {
 /* -------- Glyphicons -------- */
 
 .glyphicon {
-	font-size: 24px
+	font-size: 24px;
+}
+
+.glyphicon.form-control-feedback {
+	font-size: small;
 }
 
 .glyphicon-class {
