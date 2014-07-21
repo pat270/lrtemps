@@ -104,6 +104,10 @@ app.get('/tables', function(req, res){
   res.render('tables', { title: 'Tables' });
 });
 
+app.get('/timelines', function(req, res){
+  res.render('timelines', { title: 'Timelines' });
+});
+
 app.get('/typography', function(req, res){
   res.render('typography', { title: 'Typography' });
 });

@@ -412,3 +412,143 @@
 .separated-panels {
 	margin-bottom: 20px;
 }
+
+/* -------- Timelines -------- */
+
+.time-line {
+	background-color: #999;
+	bottom: 0;
+	color: #000;
+	content: " ";
+	left: 58px;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	width: 1px;
+}
+
+.timeline {
+	position: relative;
+}
+
+.timeline-avatar > img {
+	position: absolute;
+	top: 62px;
+	width: 36px;
+}
+
+.timeline-item {
+	list-style: none;
+	position: relative;
+}
+
+.timeline-panel,
+.timeline-center-panel {
+	left: 60px;
+	position: relative;
+	width: 70%;
+	word-wrap: break-word;
+}
+
+.timeline-panel > .panel-body:before,
+.timeline-center-panel > .panel-body:before {
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #FFF;
+	border-top: 10px solid transparent;
+	content: " ";
+	height: 0;
+	left: -10px;
+	position: absolute;
+	right: auto;
+	top: 68px;
+	width: 0;
+}
+
+.timestamp-icon {
+	color: #999;
+	font-size: 12px !important;
+	line-height: inherit;
+}
+
+@media (min-width: 480px) {
+	.timeline-panel {
+		width: 80%;
+	}
+}
+
+	/* ---- Center Timeline ---- */
+
+	.line-center {
+		left: 74px;
+	}
+
+	.timeline-avatar > i {
+		background-color: #EEE;
+		color: #E4B9B9;
+		text-align: center;
+		top: 88px;
+		width: 36px;
+	}
+
+	@media (min-width: 1024px) {
+		.item-center {
+			clear: left;
+			float: left;
+			position: relative;
+			width: 50%;
+		}
+
+		.item-center.right-align {
+			clear: right;
+			float: right;
+			top: 36px;
+		}
+
+		.line-center {
+			left: -moz-calc(50% + 20px);
+			left: -webkit-calc(50% + 20px);
+			left: calc(50% + 20px);
+		}
+
+		.right-align > .timeline-avatar > i {
+			left: -18px;
+			position: absolute;
+			top: 62px;
+		}
+
+		.timeline-avatar > i {
+			left: auto;
+			position: absolute;
+			right: -18px;
+			top: 62px;
+		}
+
+		.timeline-center {
+			position: absolute;
+		}
+
+		.timeline-center-panel {
+			margin-left: 30px;
+			margin-right: 30px;
+			left: inherit;
+			width: auto;
+		}
+
+		.timeline-center-panel > .panel-body:before {
+			border-left: 10px solid #FFF;
+			border-right: 0;
+			left: auto;
+			right: -10px;
+		}
+
+		.timeline-center-panel > .body-right.panel-body:before {
+			border-left: 0;
+			border-right: 10px solid #FFF;
+			left: -10px;
+			right: auto;
+		}
+
+		.timeline-panel {
+			word-wrap: break-word;
+		}
+	}
