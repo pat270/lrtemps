@@ -338,6 +338,19 @@ header.row {
 	max-width: 141px;
 }
 
+/* -------- Thumbnail Variations ---------*/
+
+#thumbnailVariations .img-responsive {
+	width: 100%;
+}
+
+#thumbnailVariations .user-info img {
+	float: left;
+	margin-right: 15px;
+	margin-top: 4px;
+	width: 32px;
+}
+
 @media (min-width: 480px) {
 	.glyphicons li {
 		width: 25%;

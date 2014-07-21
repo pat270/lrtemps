@@ -374,6 +374,14 @@
 	border-color: #FAEBCC;
 }
 
+/* -------- Thumbnails ------- */
+
+.thumbnail.no-borders {
+	border-width: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 /* -------- Accordions -------- */
 
 .header:hover {
