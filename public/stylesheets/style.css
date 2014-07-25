@@ -276,6 +276,20 @@ header.row {
 	font-size: 21px;
 }
 
+/* -------- Dropdowns ------- */
+
+#dropdownDisplay .dropdown-menu {
+	display: block;
+	float: none;
+	position: relative;
+	max-width: 160px;
+}
+
+#dropdownDisplay .mega-menu .dropdown-menu {
+	float: left;
+	max-width: 100%;
+}
+
 /* -------- Glyphicons -------- */
 
 .glyphicon {
