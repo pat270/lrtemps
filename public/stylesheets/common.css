@@ -138,6 +138,71 @@
 	}
 }
 
+/* -------- Modals -------- */
+
+.modal-body iframe {
+	border-width: 0;
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+.modal-body.inline-scroller {
+	overflow: auto;
+	padding: 15px;
+	height: 230px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.modal-body.iframe-scroller {
+	float: left;
+	overflow: auto;
+	padding: 0;
+	height: 230px;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+.modal-body.iframe-scroller iframe {
+	height: 100%;
+	float: left;
+	overflow: auto;
+}
+
+.modal-fluid.modal-dialog {
+	margin: 2% auto;
+	max-width: 600px;
+	width: 96%;
+}
+
+.modal-fluid.modal-lg {
+	margin: 2% auto;
+	max-width: 900px;
+	width: 96%;
+}
+
+.modal-fluid.modal-sm {
+	margin: 2% auto;
+	max-width: 300px;
+	width: 96%;
+}
+
+.modal-footer {
+	clear: both;
+}
+
+.modal-open {
+	position: fixed;
+}
+
+.modal-overlay-dark {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay-light {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* -------- Navs -------- */
 
 .nav-justified .dropdown-menu,
