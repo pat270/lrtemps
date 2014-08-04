@@ -627,5 +627,246 @@
 				<pre><code>&lt;div class="table-responsive"&gt;<br>  &lt;table class="table table-bordered table-condensed"&gt;<br>    ...<br>  &lt;/table&gt;<br>&lt;/div&gt;</code></pre>
 			</div>
 		</div>
+
+		<h1 class="col-md-12 page-title">Responsive
+			<small>resize your browser</small>
+		</h1>
+
+		<div class="col-md-6">
+			<div class="box panel panel-default table-responsive">
+				<h4 class="panel-heading">Table Flip</h4>
+
+				<table class="table table-flip">
+					<thead>
+						<tr>
+							<th>Title</th>
+
+							<th>Status</th>
+
+							<th>Author</th>
+
+							<th>Action</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+									<a href="#1">Outside in the City</a>
+
+							</td>
+
+							<td>
+								<span class="label label-success">Approved</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+									<a href="#1">Back to the Grind</a>
+
+							</td>
+
+							<td>
+								<span class="label label-warning">Needs Review</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+									<a href="#1">Organizing My Desk</a>
+
+							</td>
+
+							<td>
+								<span class="label label-success">Approved</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+									<a href="#1">Resources for Learning Online</a>
+
+							</td>
+
+							<td>
+								<span class="label label-default">Needs More Work</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<pre><code>&lt;div class="table-responsive"&gt;<br>  &lt;table class="table table-flip"&gt;<br>    ...<br>  &lt;/table&gt;<br>&lt;/div&gt;</code></pre>
+
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="box panel panel-default table-responsive">
+				<h4 class="panel-heading">Table Collapse</h4>
+
+				<table class="table table-collapse">
+					<thead>
+						<tr>
+							<th>Title</th>
+
+							<th>Status</th>
+
+							<th>Author</th>
+
+							<th>Action</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+									<a href="#1">Outside in the City</a>
+
+									<h6>2 Days Ago</h6>
+							</td>
+
+							<td>
+								<span class="label label-success">Approved</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+									<a href="#1">Back to the Grind</a>
+
+									<h6>2 Days Ago</h6>
+							</td>
+
+							<td>
+								<span class="label label-warning">Needs Review</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+									<a href="#1">Organizing My Desk</a>
+
+									<h6>2 Weeks Ago</h6>
+							</td>
+
+							<td>
+								<span class="label label-success">Approved</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+									<a href="#1">Resources for Learning Online</a>
+
+									<h6>1 Month Ago</h6>
+							</td>
+
+							<td>
+								<span class="label label-default">Needs More Work</span>
+							</td>
+
+							<td>
+								<a href="#1">Test Test</a>
+							</td>
+
+							<td>
+								<a href="#1">Edit</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<pre><code>&lt;div class="table-responsive"&gt;<br>  &lt;table class="table table-collapse"&gt;<br>    ...<br>  &lt;/table&gt;<br>&lt;/div&gt;</code></pre>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			YUI().use(
+				'aui-node',
+				function(A) {
+
+					var tables = A.all('.table-collapse');
+					if (tables) {
+						tables.each(function (table) {
+
+							var ths = table.all('thead th');
+							var labels = [];
+							if (ths) {
+								ths.each(function (thead) {
+									labels.push(thead.text());
+								});
+
+								var rows = table.all('tbody tr');
+								if (rows) {
+									rows.each(function (row) {
+
+										var cells = row.all('td');
+										if (cells) {
+											cells.each(function (cell, i) {
+												cell.placeBefore(A.Node.create('<span class="label-collapse">' + labels[i] +  '</span>'));
+											});
+										}
+									});
+								}
+							}
+						});
+					}
+			});
+		</script>
+
 	<% include includes/nav-end %>
 <% include includes/footer %>
