@@ -292,12 +292,12 @@ header.row {
 
 /* -------- Glyphicons -------- */
 
-.glyphicon {
-	font-size: 24px;
+.btn .glyphicon, .glyphicon.form-control-feedback {
+	font-size: small;
 }
 
-.glyphicon.form-control-feedback {
-	font-size: small;
+.glyphicon {
+	font-size: 24px;
 }
 
 .glyphicon-class {

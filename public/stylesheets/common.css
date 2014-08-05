@@ -212,6 +212,10 @@
 
 /* -------- Navbars -------- */
 
+.hover-dropdown li:hover ul {
+	display: block;
+}
+
 .navbar-danger .nav > li > a:hover {
 	color: #333;
 	background-color: transparent;
