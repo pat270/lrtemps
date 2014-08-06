@@ -542,6 +542,95 @@
 	overflow: hidden;
 }
 
+/* ---------- Tables --------- */
+
+.box.panel > .table-collapse,
+.box.panel > .table-flip {
+	margin-bottom: 15px;
+}
+
+.table-collapse .label-collapse {
+	display: none;
+	font-weight: bold;
+	padding: 10px 0 0 10px;
+	position: absolute;
+}
+
+@media (max-width: 768px) {
+	.table-collapse,
+	.table-collapse thead,
+	.table-collapse tbody,
+	.table-collapse th,
+	.table-collapse td,
+	.table-collapse tr {
+		display: block;
+	}
+
+	.table-collapse .label-collapse {
+		display: inline;
+	}
+
+	.table-collapse tbody {
+		border: 1px solid #EEE;
+	}
+
+	.table-collapse tbody tr td {
+		border-width: 0;
+		padding-left: 50%;
+		position: relative;
+	}
+
+	.table-collapse thead {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.table-collapse tr:nth-of-type(even) {
+		background: #EEE;
+	}
+
+	.table-responsive .table-collapse > tbody > tr > td {
+		white-space: normal;
+		word-wrap: break-word;
+	}
+
+	.table-flip,
+	.table-flip thead,
+	.table-flip tbody,
+	.table-flip th,
+	.table-flip td,
+	.table-flip tr {
+		display: block;
+	}
+
+	.table-flip tbody {
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	.table-flip > tbody > tr > td,
+	.table-flip > thead > tr > th {
+		border-bottom: 1px solid #DDD;
+		border-left: 1px solid #DDD;
+		border-top-width: 0;
+	}
+
+	.table-flip tr {
+		border-top: 1px solid #DDD;
+		display: inline-block;
+		margin: 0 -2px;
+	}
+
+	.table-flip tr:last-child {
+		border-right: 1px solid #DDD;
+	}
+
+	.table-flip thead {
+		float: left;
+	}
+}
+
 /* -------- Accordions -------- */
 
 .header:hover {
